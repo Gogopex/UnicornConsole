@@ -67,7 +67,7 @@ pub mod Build {
         };
 
         let build_dir = PathBuf::from(env::var_os("OUT_DIR").unwrap());
-        let mut config = gcc::Config::new();
+        let config = gcc::Config::new();
 
         println!("cargo:rustc-link-lib=static=chiptune");
 
@@ -99,6 +99,5 @@ pub mod Build {
 }
 
 fn main() {
-    use self::Build;
     Build::main();
 }

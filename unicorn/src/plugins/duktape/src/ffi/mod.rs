@@ -1,6 +1,6 @@
 #![allow(non_camel_case_types, non_snake_case, dead_code)]
 
-use libc::{c_void, c_int, c_char, c_short, c_ushort, c_uint, c_uchar, c_double};
+use libc::{c_void, c_char, c_double};
 
 pub type duk_context = *mut c_void;
 pub type duk_errcode_t = i32;
@@ -41,16 +41,16 @@ pub const DUK_RET_URI_ERROR: duk_ret_t = -7;
 pub const DUK_EXEC_SUCCESS: duk_int_t = 0;
 pub const DUK_EXEC_ERROR: duk_int_t = 1;
 
-pub const DUK_COMPILE_EVAL: duk_uint_t = (1 << 3);    /* compile eval code (instead of global code) */
-pub const DUK_COMPILE_FUNCTION: duk_uint_t = (1 << 4);    /* compile function code (instead of global code) */
-pub const DUK_COMPILE_STRICT: duk_uint_t = (1 << 5);    /* use strict (outer) context for global, eval, or function code */
-pub const DUK_COMPILE_SHEBANG: duk_uint_t = (1 << 6);    /* allow shebang ('#! ...') comment on first line of source */
-pub const DUK_COMPILE_SAFE: duk_uint_t = (1 << 7);    /* (internal) catch compilation errors */
-pub const DUK_COMPILE_NORESULT: duk_uint_t = (1 << 8);   /* (internal) omit eval result */
-pub const DUK_COMPILE_NOSOURCE: duk_uint_t = (1 << 9);    /* (internal) no source string on stack */
-pub const DUK_COMPILE_STRLEN: duk_uint_t = (1 << 10);   /* (internal) take strlen() of src_buffer (avoids double evaluation in macro) */
-pub const DUK_COMPILE_NOFILENAME: duk_uint_t = (1 << 11);   /* (internal) no filename on stack */
-pub const DUK_COMPILE_FUNCEXPR : duk_uint_t = (1 << 12);
+pub const DUK_COMPILE_EVAL: duk_uint_t = 1 << 3;    /* compile eval code (instead of global code) */
+pub const DUK_COMPILE_FUNCTION: duk_uint_t = 1 << 4;    /* compile function code (instead of global code) */
+pub const DUK_COMPILE_STRICT: duk_uint_t = 1 << 5;    /* use strict (outer) context for global, eval, or function code */
+pub const DUK_COMPILE_SHEBANG: duk_uint_t = 1 << 6;    /* allow shebang ('#! ...') comment on first line of source */
+pub const DUK_COMPILE_SAFE: duk_uint_t = 1 << 7;    /* (internal) catch compilation errors */
+pub const DUK_COMPILE_NORESULT: duk_uint_t = 1 << 8;   /* (internal) omit eval result */
+pub const DUK_COMPILE_NOSOURCE: duk_uint_t = 1 << 9;    /* (internal) no source string on stack */
+pub const DUK_COMPILE_STRLEN: duk_uint_t = 1 << 10;   /* (internal) take strlen() of src_buffer (avoids double evaluation in macro) */
+pub const DUK_COMPILE_NOFILENAME: duk_uint_t = 1 << 11;   /* (internal) no filename on stack */
+pub const DUK_COMPILE_FUNCEXPR : duk_uint_t = 1 << 12;
 
 pub const DUK_TYPE_MIN: duk_int_t = 0;
 pub const DUK_TYPE_NONE: duk_int_t = 0;    /* no value, e.g. invalid index */

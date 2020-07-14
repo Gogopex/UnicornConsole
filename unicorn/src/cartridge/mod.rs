@@ -565,7 +565,7 @@ fn read_from_uniformat<R: io::BufRead>(filename: &str, buf: &mut R) -> Result<Ca
 
     let re_delim_section = Regex::new(SECTION_DELIM_RE).unwrap();
 
-    let mut sections: HashMap<String, Vec<(String)>> = HashMap::new();
+    let mut sections: HashMap<String, Vec<String>> = HashMap::new();
 
     let mut section_name = "".to_string();
 
@@ -665,7 +665,7 @@ pub fn from_dunicorn_file_raw<R: io::BufRead>(buf_reader: &mut R) -> Result<Cart
 
     let re_delim_section = Regex::new(SECTION_DELIM_RE).unwrap();
 
-    let mut sections: HashMap<String, Vec<(String)>> = HashMap::new();
+    let mut sections: HashMap<String, Vec<String>> = HashMap::new();
 
     let mut section_name = "".to_string();
 
@@ -811,7 +811,7 @@ impl Cartridge {
 
         let re_delim_section = Regex::new(SECTION_DELIM_RE).unwrap();
 
-        let mut sections: HashMap<String, Vec<(String)>> = HashMap::new();
+        let mut sections: HashMap<String, Vec<String>> = HashMap::new();
 
         let mut section_name = "".to_string();
 

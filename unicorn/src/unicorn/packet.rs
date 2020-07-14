@@ -305,7 +305,7 @@ impl fmt::Debug for VarInt {
     }
 }
 
-pub fn write_packet<T: PacketType>(packet: T) -> Result<(Vec<u8>), Error> {
+pub fn write_packet<T: PacketType>(packet: T) -> Result<Vec<u8>, Error> {
     let mut buf = Vec::new();
 
     // println!("{:?}", packet.packet_id());
