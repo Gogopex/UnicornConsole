@@ -1,0 +1,23 @@
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/lua-source/src/lundump.c:237:33: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
+  checkliteral(S, LUA_SIGNATURE + 1, "not a");  /* 1st char already checked */
+                  ~~~~~~~~~~~~~~^~~
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/lua-source/src/lundump.c:237:33: note: use array indexing to silence this warning
+  checkliteral(S, LUA_SIGNATURE + 1, "not a");  /* 1st char already checked */
+                                ^
+                  &             [  ]
+1 warning generated.
+src/glue/glue.c:83:18: warning: expression result unused [-Wunused-value]
+  for (; n; n--, *written++) *(*str)++ = c;
+                 ^~~~~~~~~~
+src/glue/glue.c:93:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  while (cur = *in++) {
+         ~~~~^~~~~~~
+src/glue/glue.c:93:14: note: place parentheses around the assignment to silence this warning
+  while (cur = *in++) {
+             ^
+         (          )
+src/glue/glue.c:93:14: note: use '==' to turn this assignment into an equality comparison
+  while (cur = *in++) {
+             ^
+             ==
+2 warnings generated.

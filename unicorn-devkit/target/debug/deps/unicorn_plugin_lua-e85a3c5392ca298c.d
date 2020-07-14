@@ -1,0 +1,15 @@
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn-devkit/target/debug/deps/unicorn_plugin_lua-e85a3c5392ca298c.rmeta: /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/lib.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/mod.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/luaconf.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/lua.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/lauxlib.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/lualib.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/wrapper/mod.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/wrapper/convert.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/wrapper/state.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/macros.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn-devkit/target/debug/build/unicorn_plugin_lua-6a334a0a005b1539/out/glue.rs
+
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn-devkit/target/debug/deps/unicorn_plugin_lua-e85a3c5392ca298c.d: /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/lib.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/mod.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/luaconf.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/lua.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/lauxlib.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/lualib.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/wrapper/mod.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/wrapper/convert.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/wrapper/state.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/macros.rs /Users/ludovic.pouey/dev/UnicornConsole/unicorn-devkit/target/debug/build/unicorn_plugin_lua-6a334a0a005b1539/out/glue.rs
+
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/lib.rs:
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/mod.rs:
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/luaconf.rs:
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/lua.rs:
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/lauxlib.rs:
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/ffi/lualib.rs:
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/wrapper/mod.rs:
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/wrapper/convert.rs:
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/wrapper/state.rs:
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn/src/plugins/lua/src/macros.rs:
+/Users/ludovic.pouey/dev/UnicornConsole/unicorn-devkit/target/debug/build/unicorn_plugin_lua-6a334a0a005b1539/out/glue.rs:
