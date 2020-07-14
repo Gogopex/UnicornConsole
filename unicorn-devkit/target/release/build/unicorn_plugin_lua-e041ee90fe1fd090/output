@@ -1,2 +1,0 @@
-cargo:rustc-link-lib=static=lua
-cargo:rustc-link-search=native=/Users/ludovic.pouey/dev/UnicornConsole/unicorn-devkit/target/release/build/unicorn_plugin_lua-e041ee90fe1fd090/out
