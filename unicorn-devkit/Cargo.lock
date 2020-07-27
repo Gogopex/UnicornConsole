@@ -124,7 +124,7 @@ name = "chiptune"
 version = "0.0.1"
 dependencies = [
  "bitflags 0.1.1",
- "gcc",
+ "cc",
  "lazy_static 0.2.11",
  "libc",
 ]
@@ -241,8 +241,8 @@ version = "0.0.1"
 dependencies = [
  "abort_on_panic",
  "bitflags 0.1.1",
+ "cc",
  "cesu8",
- "gcc",
  "libc",
  "serde",
 ]
@@ -306,12 +306,6 @@ name = "gapbuffer"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3e929b3ff01e4accdce7f5596a044890b5052ab7418ba8ce9ce5865d26ae4417"
-
-[[package]]
-name = "gcc"
-version = "0.3.55"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8f5f3913fa0bfe7ee1fd8248b6b9f42a5af4b9d65ec2dd2c3c26132b950ecfc2"
 
 [[package]]
 name = "getopts"
@@ -1052,7 +1046,7 @@ name = "unicorn_plugin_lua"
 version = "0.0.11"
 dependencies = [
  "bitflags 0.1.1",
- "gcc",
+ "cc",
  "libc",
 ]
 

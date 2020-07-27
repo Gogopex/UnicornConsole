@@ -1,0 +1,15 @@
+/Users/ludwig/Dev/UnicornConsole/unicorn-devkit/target/debug/deps/onig-af1016cf1aa5025b.rmeta: /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/lib.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/find.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/flags.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/region.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/replace.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/match_param.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/names.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/syntax.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/tree.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/utils.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/buffers.rs
+
+/Users/ludwig/Dev/UnicornConsole/unicorn-devkit/target/debug/deps/onig-af1016cf1aa5025b.d: /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/lib.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/find.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/flags.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/region.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/replace.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/match_param.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/names.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/syntax.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/tree.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/utils.rs /Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/buffers.rs
+
+/Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/lib.rs:
+/Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/find.rs:
+/Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/flags.rs:
+/Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/region.rs:
+/Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/replace.rs:
+/Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/match_param.rs:
+/Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/names.rs:
+/Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/syntax.rs:
+/Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/tree.rs:
+/Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/utils.rs:
+/Users/ludwig/.cargo/registry/src/github.com-1ecc6299db9ec823/onig-3.2.2/src/buffers.rs:

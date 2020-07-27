@@ -1,0 +1,25 @@
+cargo:rustc-link-lib=static=duktape
+OPT_LEVEL = Some("3")
+TARGET = Some("x86_64-apple-darwin")
+HOST = Some("x86_64-apple-darwin")
+TARGET = Some("x86_64-apple-darwin")
+TARGET = Some("x86_64-apple-darwin")
+HOST = Some("x86_64-apple-darwin")
+CC_x86_64-apple-darwin = None
+CC_x86_64_apple_darwin = None
+HOST_CC = None
+CC = None
+HOST = Some("x86_64-apple-darwin")
+TARGET = Some("x86_64-apple-darwin")
+HOST = Some("x86_64-apple-darwin")
+CFLAGS_x86_64-apple-darwin = None
+CFLAGS_x86_64_apple_darwin = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("false")
+Compiling duktape.c...
+cc -c -O2 -Wall -Wextra -std=gnu99 -fPIC -O3 -Wall -o duktape.o /Users/ludwig/Dev/UnicornConsole/unicorn/src/plugins/duktape/duktape-source/duktape.c
+Compiling duktape_binding.c...
+cc -c -O2 -Wall -Wextra -std=gnu99 -fPIC -O3 -Wall -o duktape_binding.o /Users/ludwig/Dev/UnicornConsole/unicorn/src/plugins/duktape/duktape-source/duktape_binding.c
+Linking libduktape...
+cargo:rustc-link-search=native=/Users/ludwig/Dev/UnicornConsole/unicorn-devkit/target/release/build/duktape-d38c9b761da50675/out
