@@ -38,6 +38,12 @@ TOC:
   
 
 ## Download
+
+### Prerequsites
+Download CMake here https://cmake.org/download/ for your platform
+Install SDL2 (for osx, `brew install sdl2` works)
+
+https://www.libsdl.org/download-2.0.php#source or brew install sdl2
 ### Build
 
 Cargo feature:
@@ -59,7 +65,7 @@ and run it with the default embedded game:
 
 or load an existing one:
 ```
-./target/release/uc-devkit ../unicorn/games/floppybird/floppybird.uni
+./target/release/uc-devkit ../unicorn-games/floppybird/floppybird.uni
 ```
 
 You can also choose to build the libretro version:
