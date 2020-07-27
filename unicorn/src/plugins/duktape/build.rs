@@ -1,4 +1,4 @@
-extern crate gcc;
+extern crate cc;
 
 use std::fs;
 use std::io;
@@ -26,7 +26,7 @@ impl CommandExt for Command {
     }
 }
 
-fn build_duktape(tooling: &gcc::Tool, source: &Path, build: &Path) -> io::Result<()> {
+fn build_duktape(tooling: &cc::Tool, source: &Path, build: &Path) -> io::Result<()> {
     // extract CC and MYCFLAGS from the detected tooling
     let cc = tooling.path();
     let mut cflags = OsString::new();
@@ -64,7 +64,7 @@ fn prebuild() -> io::Result<()> {
     };
 
     let build_dir = PathBuf::from(env::var_os("OUT_DIR").unwrap());
-    let mut config = gcc::Config::new();
+    let mut config = cc::Build::new();
 
     println!("cargo:rustc-link-lib=static=duktape");
 

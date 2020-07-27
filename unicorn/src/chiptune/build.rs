@@ -1,6 +1,6 @@
 #[cfg(feature = "libksnd")]
 pub mod Build {
-    extern crate gcc;
+    extern crate cc;
 
     use std::fs;
     use std::io;
@@ -27,7 +27,7 @@ pub mod Build {
         }
     }
 
-    fn build_chiptune(tooling: &gcc::Tool, source: &Path, build: &Path) -> io::Result<()> {
+    fn build_chiptune(tooling: &cc::Tool, source: &Path, build: &Path) -> io::Result<()> {
         // extract CC and MYCFLAGS from the detected tooling
         let cc = tooling.path();
         let mut cflags = OsString::new();
@@ -67,7 +67,7 @@ pub mod Build {
         };
 
         let build_dir = PathBuf::from(env::var_os("OUT_DIR").unwrap());
-        let config = gcc::Config::new();
+        let config = cc::Build::new();
 
         println!("cargo:rustc-link-lib=static=chiptune");
 

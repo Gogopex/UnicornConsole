@@ -948,7 +948,7 @@ impl Unicorn {
                                             &[])
                 .unwrap();
 
-        encoder.set(gif::Repeat::Infinite).unwrap();
+        // encoder.set(gif::Repeat::Infinite).unwrap();
 
         let mut idx = 0;
         for i in 0..self.record.images.len() / (screen.width * screen.height * 3) {

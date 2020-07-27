@@ -39,7 +39,7 @@ fn prebuild() -> io::Result<()> {
 }
 
 fn main() {
-    let _profile = env::var("PROFILE").unwrap_or("Debug".to_string());
+    let _profile = env::var("PROFILE").unwrap_or_else(|_| "Debug".to_string());
     let _current_dir = std::env::current_dir().unwrap();
     let target_os = env::var("TARGET").unwrap();
 
