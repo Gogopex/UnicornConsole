@@ -1,14 +1,8 @@
 use std::cmp;
-use std::borrow::Cow;
-use std::path::Path;
-use std::path::PathBuf;
-use std::io::Write;
-use std::fs::{File, rename};
 use std::sync::{Mutex, Arc};
 use std::time::SystemTime;
 use std::rc::Rc;
 
-use unicode_width::UnicodeWidthChar;
 use std::collections::HashMap;
 
 #[cfg(feature = "syntect")]

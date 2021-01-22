@@ -101,7 +101,7 @@ pub struct Editor {
     buffers: Vec<Arc<Mutex<Buffer>>>,
     view: View,
     running: bool,
-    mode: Box<Mode>,
+    mode: Box<dyn Mode>,
     options: Options,
 
     command_queue: Receiver<Command>,
@@ -139,7 +139,7 @@ impl Editor {
     }
 
     #[cfg(feature = "syntect")]
-    pub fn new(source: Input, mode: Box<Mode>, opts: Options) -> Editor {
+    pub fn new(source: Input, mode: Box<dyn Mode>, opts: Options) -> Editor {
         let (snd, recv) = channel();
 
         let mut buffers = Vec::new();

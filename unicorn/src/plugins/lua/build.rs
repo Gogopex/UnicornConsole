@@ -1,4 +1,4 @@
-extern crate gcc;
+extern crate cc;
 
 use std::fs;
 use std::io;
@@ -27,7 +27,7 @@ impl CommandExt for Command {
 }
 
 /// The command to build lua, with switches for different *nix targets.
-fn build_lua(tooling: &gcc::Tool, source: &Path, build: &Path) -> io::Result<()> {
+fn build_lua(tooling: &cc::Tool, source: &Path, build: &Path) -> io::Result<()> {
     // calculate the Lua platform name
     let platform = match env::var("TARGET").unwrap().split('-').nth(2).unwrap() {
         "windows" => "mingw",
@@ -133,7 +133,7 @@ fn prebuild() -> io::Result<()> {
         }
     };
     let build_dir = PathBuf::from(env::var_os("OUT_DIR").unwrap());
-    let mut config = gcc::Config::new();
+    let mut config = cc::Build::new();
     let msvc = env::var("TARGET").unwrap().split('-').last().unwrap() == "msvc";
     println!("cargo:rustc-link-lib=static=lua");
     if !msvc && lua_dir.join("liblua.a").exists() {

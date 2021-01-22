@@ -9,6 +9,9 @@ pub mod wfc;
 pub mod bump;
 pub mod utils;
 
+use std::path::Path;
+use std::fs::File;
+
 use std::collections::HashMap;
 use std::io::Cursor;
 use std::sync::{Arc, Mutex};
@@ -18,14 +21,8 @@ use std::cmp::{max, PartialOrd};
 #[cfg(feature = "image")]
 use image;
 
-use gif;
-use gif::SetParameter;
-
 use std::io::prelude::*;
 use std::time::Duration;
-
-use std::path::Path;
-use std::fs::File;
 
 use plugins::lua_plugin::plugin::LuaPlugin;
 use plugins::python_plugin::plugin::PythonPlugin;
@@ -173,7 +170,7 @@ pub enum Code {
 }
 
 
-#[cfg_attr(rustfmt, rustfmt_skip)]
+#[rustfmt::skip]
 pub fn draw_logo(screen: &mut gfx::Screen) {
     let width = screen.width;
     let height = screen.height;
@@ -467,7 +464,7 @@ impl Palettes {
 
         for line in buf_reader.lines() {
             let line = line.unwrap();
-            let l = line.trim_left().to_string();
+            let l = line.trim_start().to_string();
 
             if l.is_empty() {
                 continue;
@@ -572,7 +569,7 @@ pub struct UnicornCartridge {
     pub cartridge: Cartridge,
     pub lua_plugin: LuaPlugin,
     pub python_plugin: PythonPlugin,
-    pub rust_plugin: Vec<Box<RustPlugin>>,
+    pub rust_plugin: Vec<Box<dyn RustPlugin>>,
     pub javascript_plugin: JavascriptPlugin,
     pub music_track: Vec<chiptune::ChiptuneSong>,
     pub sound_tracks: HashMap<String, chiptune::ChiptuneSound>,
@@ -733,7 +730,7 @@ impl Unicorn {
         self.configuration.lock().unwrap().toggle_info_overlay();
     }
 
-    #[cfg_attr(rustfmt, rustfmt_skip)]
+    #[rustfmt::skip]
     pub fn mouse_sprite() -> Vec<u8> {
         vec![0, 1, 0, 0, 0, 0, 0, 0,
              1, 7, 1, 0, 0, 0, 0, 0,
@@ -951,7 +948,7 @@ impl Unicorn {
                                             &[])
                 .unwrap();
 
-        encoder.set(gif::Repeat::Infinite).unwrap();
+        // encoder.set(gif::Repeat::Infinite).unwrap();
 
         let mut idx = 0;
         for i in 0..self.record.images.len() / (screen.width * screen.height * 3) {
@@ -1265,10 +1262,11 @@ impl Unicorn {
                 self.state = UnicornState::RUN;
             }
 
+            unicorn_cartridge.loaded = true;
+
             self.add_cartridge(unicorn_cartridge);
             self._setup_screen();
 
-            unicorn_cartridge.loaded = true;
 
             self.init();
         }
